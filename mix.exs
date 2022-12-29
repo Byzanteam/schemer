@@ -6,10 +6,19 @@ defmodule Schemer.MixProject do
       app: :schemer,
       version: "0.1.0",
       elixir: "~> 1.14",
+      description: "The Schemer.",
       elixirc_paths: elixirc_paths(Mix.env()),
       start_permanent: Mix.env() == :prod,
       deps: deps(),
-      aliases: aliases()
+      aliases: aliases(),
+      package: [
+        name: "schemer",
+        licenses: ["MIT"],
+        files: ~w(lib mix.exs mix.lock .tool-versions README.md),
+        links: %{
+          "GitHub" => "https://github.com/Byzanteam/schemer"
+        }
+      ]
     ]
   end
 
