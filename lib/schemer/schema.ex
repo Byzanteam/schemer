@@ -1,5 +1,7 @@
 defmodule Schemer.Schema do
-  @moduledoc false
+  @moduledoc """
+  The schema for a schemer.
+  """
 
   use TypedStruct
 

@@ -1,5 +1,7 @@
 defmodule Schemer.Execution do
-  @moduledoc false
+  @moduledoc """
+  A schemer execution.
+  """
 
   use TypedStruct
 
